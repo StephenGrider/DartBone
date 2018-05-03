@@ -1,6 +1,5 @@
-# mari
+# DartBone
 
-An absolute bare-bones web app.
+Proof-of-concept of Backbone/Marionette in Dart.
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+Not appropriate for any kind of use.
