@@ -2,15 +2,13 @@ import 'dart:async';
 
 abstract class Model {
   Map<String, Object> attributes;
-  StreamController<String> events;
+  final events = new StreamController<String>.broadcast();
 
-  Model({this.attributes}) {
-    events = new StreamController<String>();
-  }
+  Model({this.attributes});
 
   void set(key, value) {
     attributes[key] = value;
-    events.add('change');
+    trigger('change');
   }
 
   trigger(String eventName) {

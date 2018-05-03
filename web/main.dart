@@ -1,11 +1,8 @@
 import 'dart:html';
-import 'src/header_view.dart';
-import 'src/counter_model.dart';
+import 'src/app.dart';
 
 void main() {
-  var model = new CounterModel();
+  var app = new App(parent: document.body);
 
-  var headerView = new HeaderView(model: model, parent: document.body);
-
-  headerView.render();
+  app.render();
 }
